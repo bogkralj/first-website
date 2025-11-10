@@ -1,38 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRM - Brezskrbna Rešitev Mobilnosti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main_style.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Rkman</title>
-        <link rel="stylesheet" href="assets/css/style.css"> <!--pazi da bo css file enako imenovan kot v tej kodi-->
-        <script src="assets/js/main.js" defer></script> <!--pazi, da bo js file imenovan kot v tej kodi-->
-     </head>
-        <meta  name="description" content="Rkman - Dobrodošli na naši glavni strani, kjer predstavljamo naše storitve.">
-    <body>
+<body>
+<section id="home" class="hero-section">
+  <div class="hero-bg-container">
+    <img src="assets/images/5285238fe6963d8e977e0f2385d7e9719282b66d.png" alt="Car background" class="hero-bg-image">
+  </div>
 
-        <header>
-            <h1>Rkman</h1>
-            <nav>
-                <a href="main.html">Domov</a>
-                <a href="subpages/service1.html">Storitev 1</a>
-                <a href="subpages/service2.html">Storitev 2</a>
-                <a href="subpages/service3.html">Storitev 3</a>
-            </nav>
-        </header>
+  <header class="page-header">
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="contact-info">
+          <a href="tel:+38669699848" class="contact-item">
+            <img src="assets/images/205_201.svg" alt="Phone icon">
+            <span>+386 69 699 848</span>
+          </a>
+          <a href="mailto:gasper.rkman@brm.si" class="contact-item">
+            <img src="assets/images/205_204.svg" alt="Email icon">
+            <span>gasper.rkman@brm.si</span>
+          </a>
+        </div>
+        <div class="social-media">
+          <!--merged image-->
+          <a href="#"><img src="assets/images/205_211.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/images/205_212.svg" alt="Twitter"></a>
+          <a href="#"><img src="assets/images/205_213.svg" alt="Instagram"></a>
+          <a href="#"><img src="assets/images/205_209.svg" alt="Youtube"></a>
+          <a href="#"><img src="assets/images/205_210.svg" alt="Google"></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav">assets/
+      <div class="container main-nav-content">
+        <a href="#home" class="logo">
+          <img src="assets/images/e057d70924c63f063f1d103b45fd25743314d853.png" alt="BRM Logo">
+        </a>
+        <nav class="nav-menu">
+          <a href="#home">DOMOV</a>
+          <a href="#footer">KONTAKT</a>
+          <a href="#">O NAS</a>
+          <a href="#services">STORITVE</a>
+          <a href="#">VIZIJA</a>
+        </nav>
+        <a href="#" class="btn btn-primary">NAROČI STORITEV</a>
+      </div>
+    </div>
+  </header>
 
-        <main>
-            <h2>..........Pozdrav..........</h2>
-            <p>kratek opis podejetja in storitev</p>
-            <div><a href="subpages/service1.html">Vzdrževanje vozil</a></div>
-            <div><a href="subpages/service2.html">Uvoz in nakup vozila</a></div>
-            <div><a href="subpages/service3.html">Vzdrževanje objektov</a></div>
-        </main>
-
-        <footer>
-            <p>© 2025 Rkman | Kontakt: info@rkman.si</p>
-        </footer>
-
-    </body>
-
+  <div class="container hero-text-container">
+    <div class="hero-text">
+      <p class="subtitle">Celovita storitev za vaše vozilo, kjer koli ste.</p>
+      <h1 class="title">BREZSKRBNA REŠITEV<br>MOBILNOSTI.</h1>
+      <a href="#" class="btn btn-primary btn-large">REZERVIRAJTE TERMIN SVETOVANJA</a>
+    </div>
+  </div>
+</section>
+<section id="stats" class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <p class="stat-number">100+</p>
+        <p class="stat-label">vozil pod našim<br>nadzorom</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-number">2.000ur+</p>
+        <p class="stat-label">Prihranjenjenega<br>časa strankam</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-number">&lt;1H</p>
+        <p class="stat-label">Povprečen<br>odzivni čas:</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="section-title">storitve, ki vam jih ponujamo</h2>
+    <div class="services-slider">
+      <div class="services-grid">
+        <div class="service-card dark">
+          <div class="card-icon-wrapper dark-icon">
+            <img src="assets/images/205_141.svg" alt="Package icon" class="card-icon">
+          </div>
+          <h3 class="card-title">Vzdrževanje vozil</h3>
+          <p class="card-description">Izberemo in preverimo popolno vozilo za vas. Prevzamemo vso dokumentacijo in logistiko, vi pa ste brezskrbni od izbire do registracije.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon-wrapper light-icon">
+            <img src="assets/images/205_149.svg" alt="Car gear icon" class="card-icon">
+          </div>
+          <h3 class="card-title dark-text">Uvoz vozila po naročilu</h3>
+          <p class="card-description muted-text">Sodelujemo zgolj z najboljšimi in preverjenimi ponudniki. Organiziramo, nadzorujemo in poskrbimo, da je vaš avtomobil vedno brezhiben.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon-wrapper light-icon-alt">
+            <img src="assets/images/205_158.svg" alt="3p icon" class="card-icon">
+          </div>
+          <h3 class="card-title dark-text">Nakup vozila iz zaloge</h3>
+          <p class="card-description muted-text">Naše strokovno znanje je vaša prednost. Svetujemo vam pri prodaji, vrednotenju in učenju, kako optimalno upravljati z vozili.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon-wrapper light-icon-alt">
+            <img src="assets/images/205_165.svg" alt="3p icon" class="card-icon">
+          </div>
+          <h3 class="card-title dark-text">Čiščenje Vozila na vaši lokaciji</h3>
+          <p class="card-description muted-text">Naše strokovno znanje je vaša prednost. Svetujemo vam pri prodaji, vrednotenju in učenju, kako optimalno upravljati z vozili.</p>
+        </div>
+      </div>
+      <button class="slider-arrow prev"><img src="assets/images/205_263.svg" alt="Previous"></button>
+      <button class="slider-arrow next"><img src="assets/images/205_263.svg" alt="Next"></button>
+    </div>
+    <div class="section-cta">
+      <a href="#" class="btn-dark">VEČ O STORITVAH</a>
+    </div>
+  </div>
+</section>
+<section id="cta" class="cta-section">
+  <div class="cta-bg">
+    <img src="assets/images/8343ed7b7e2683482809ae371fe18989af965f8b.png" alt="Car silhouette">
+  </div>
+  <div class="cta-overlay"></div>
+  <div class="container cta-content">
+    <h2>POTREBUJETE KONKRETNO REŠITEV?</h2>
+    <a href="#" class="btn-light">rezervirajte termin</a>
+  </div>
+</section>
+<section id="partners" class="partners-section">
+  <div class="container partners-container">
+    <div class="partners-content">
+      <h2 class="partners-title">Sodelujemo z najboljšimi</h2>
+      <p class="partners-text">Vaša mobilnost, podprta z zanesljivostjo in prestižem.</p>
+      <a href="#footer" class="btn-light">kontaktirajte nas</a>
+    </div>
+    <div class="partners-logos">
+      <!--merged image-->
+      <div class="logo-grid">
+        <div class="logo-item"><img src="assets/images/205_245.svg" alt="Partner logo"></div>
+        <div class="logo-item"><img src="assets/images/205_247.svg" alt="Partner logo"></div>
+        <div class="logo-item"><img src="assets/images/205_250.svg" alt="Partner logo"></div>
+        <div class="logo-item"><img src="assets/images/205_252.svg" alt="Partner logo"></div>
+        <div class="logo-item"><img src="assets/images/205_255.svg" alt="Partner logo"></div>
+        <div class="logo-item"><img src="assets/images/205_257.svg" alt="Partner logo"></div>
+        <div class="logo-item"><img src="assets/images/205_260.svg" alt="Partner logo"></div>
+        <div class="logo-item"><img src="assets/images/205_262.svg" alt="Partner logo"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="testimonials" class="testimonials-section">
+  <div class="testimonials-bg">
+    <img src="assets/images/d7abc517eddb5def252df7a18d1d791cbbc37d2b.png" alt="Abstract background">
+  </div>
+  <div class="container">
+    <h2 class="testimonials-title">zaupanje naših strank</h2>
+    <div class="testimonials-slider">
+      <div class="testimonials-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <img src="assets/images/db12bd14172b34bb2fb848662d671a9972f92d3a.png" alt="Marko Kovač" class="avatar">
+            <h3 class="reviewer-name">Marko Kovač</h3>
+          </div>
+          <p class="review-text">Z BRM smo končno našli partnerja, ki resnično razume naše potrebe po mobilnosti. Njihove rešitve so nam prihranile ogromno časa in zmanjšale operativne stroške. Vse poteka brezhibno in brezskrbno, kar je v našem poslu ključnega pomena. Toplo priporočamo!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <img src="assets/images/58334b90cd3611838838b17f0e251665e7559a94.png" alt="Luka Perko" class="avatar">
+            <h3 class="reviewer-name">Luka Perko</h3>
+          </div>
+          <p class="review-text">Odkar sodelujemo z BRM, je naša logistika postala veliko bolj učinkovita. Njihova platforma je intuitivna in enostavna za uporabo, ekipa pa vedno odzivna. To nam omogoča, da se popolnoma osredotočimo na naše stranke, saj vemo, da je naša mobilnost v zanesljivih rokah.</p>
+        </div>
+      </div>
+      <button class="slider-arrow prev"><img src="assets/images/205_111.svg" alt="Previous"></button>
+      <button class="slider-arrow next"><img src="assets/images/205_108.svg" alt="Next"></button>
+    </div>
+  </div>
+</section>
+<footer id="footer" class="site-footer">
+  <div class="footer-bg">
+    <img src="assets/images/642c943d764cebee128b8749956e2bf4fa4491c8.png" alt="Footer background">
+  </div>
+  <div class="container footer-main">
+    <div class="footer-col about">
+      <img src="assets/images/brm_logo.png" alt="BRM Logo" class="footer-logo">
+    </div>
+    <div class="footer-col links">
+      <h4 class="footer-title">useful link</h4>
+      <nav>
+        <a href="#">pogosta vprašanja</a>
+        <a href="#">o nas</a>
+        <a href="#">storitve</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+      </nav>
+    </div>
+    <div class="footer-col contact">
+      <h4 class="footer-title">contact info</h4>
+      <p>phone: +386 69 699 848</p>
+      <p>email: <a href="mailto:gasper.rkman@brm.si" class="email-link">gasper.rkman@brm.si</a></p>
+      <p>office time: 10am-5pm</p>
+      <p>Address: 4072 Camden Street</p>
+    </div>
+    <div class="footer-col social">
+      <h4 class="footer-title">Follow Us</h4>
+      <!--merged image-->
+      <div class="social-icons-grid">
+        <a href="#"><img src="assets/images/205_85.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/205_84.svg" alt="Twitter"></a>
+        <a href="#"><img src="assets/images/205_80.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/images/205_79.svg" alt="YouTube"></a>
+        <a href="#"><img src="assets/images/205_78.svg" alt="Google"></a>
+        <a href="#"><img src="assets/images/205_77.svg" alt="Linkedin"></a>
+      </div>
+    </div>
+  </div>
+  <a href="#home" class="back-to-top">
+    <img src="assets/images/205_75.svg" alt="Back to top">
+  </a>
+  <div class="footer-bottom">
+    <p>Copyright © 2021. Designed by <span>Gal Fonda</span></p>
+  </div>
+</footer>
+</body>
 </html>
