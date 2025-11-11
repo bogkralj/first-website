@@ -5,22 +5,37 @@
     display: flex;
     flex-direction: column;
     color: var(--color-light);
+    overflow: hidden;
   }
 
-  .hero-bg-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
+.hero-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
 
-  .hero-bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: sepia(60%) saturate(180%) brightness(85%) contrast(115%) hue-rotate(10deg) blur(1px);
+}
+
+/* --- the shading layer --- */
+.hero-bg-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0b0b0b;
+  mix-blend-mode: multiply; /* try overlay, soft-light, or color for different effects */
+  opacity: 0.4; /* change this to make it lighter/darker */
+  pointer-events: none;
+}
 
   .page-header {
     position: absolute;
@@ -153,8 +168,9 @@
     .hero-text .subtitle { font-size: 22px; }
     .contact-info { flex-direction: column; gap: 10px; align-items: flex-start; }
     .top-bar-content { flex-direction: column; gap: 15px; }
+    
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .page-header { position: static; }
     .main-nav-content { flex-direction: column; height: auto; padding: 20px 0; }
     .nav-menu { flex-direction: column; align-items: center; padding: 20px 0; }
@@ -348,9 +364,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    filter: grayscale();
+    
   }
   .cta-overlay {
-    background: linear-gradient(270deg, #010101 0%, rgba(34, 34, 34, 0.47) 42.15%, #202020 87.05%);
+    background: linear-gradient(270deg, #000000 0%, rgba(128, 126, 126, 0.358) 42.15%, #000000 87.05%);
   }
   .cta-content {
     position: relative;
@@ -450,20 +469,34 @@
     position: relative;
     padding: 100px 0;
     color: var(--color-light);
+    overflow: hidden;
   }
-  .testimonials-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  .testimonials-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.testimonials-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.testimonials-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(50%) blur(2px);
+}
+
+/* črn overlay čez sliko */
+.testimonials-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.288); /* 0.4 = srednje temno; spremeni po želji */
+  pointer-events: none;
+}
   .testimonials-title {
     font-family: var(--font-main);
     font-weight: 700;
@@ -655,3 +688,4 @@
   html {
   scroll-behavior: smooth;
 }
+
