@@ -71,14 +71,14 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 0.3s ease;
 }
 
+.btn:hover {
+  opacity: 0.7;
+}
+
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-light);
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.btn-primary:hover {
-    opacity: 0.9;
 }
 
 .btn-dark {
@@ -140,10 +140,28 @@ h1, h2, h3, h4, h5, h6, p {
 
 .service-button-wrapper {
     position: absolute;
-    bottom: -35px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button:hover,
+.btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1920px) {
+  .service-description {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -160,11 +178,19 @@ h1, h2, h3, h4, h5, h6, p {
         text-align: center;
     }
     .service-description {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.5;
-        text-align: center;
+        text-align: left;
     }
     .service-content {
+        align-items: left;
+    }
+    .service-image img {
+        width: 100%;     /* ostane širina */
+        height: auto;    /* ohrani razmerje */
+
+        max-height: 600px;  /* <-- MANJŠA višina slike */
+        object-fit: cover;  /* da lepo odreže, če je treba */
         align-items: center;
     }
 }
@@ -174,9 +200,17 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 36px;
     }
     .service-description {
-        font-size: 18px;
+        font-size: 17px;
     }
     .btn {
         font-size: 18px;
+    }
+        .service-image img {
+        width: 100%;     /* ostane širina */
+        height: auto;    /* ohrani razmerje */
+
+        max-height: 500px;  /* <-- MANJŠA višina slike */
+        object-fit: cover;  /* da lepo odreže, če je treba */
+        align-items: center;
     }
 }
